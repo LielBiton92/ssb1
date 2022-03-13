@@ -38,7 +38,7 @@ int main(){
         cin >> x ; 
         
 
-
+        //input numbers
         if (x =='A'){
             cout << "Insert column size" << endl;
             cin >> colls ;
@@ -56,7 +56,7 @@ int main(){
             cout << e.what() << endl;
         }
         }
-
+        //random rows and colls
         else if (x=='B'){
 
             colls= rand_range(1, 40); 
@@ -69,7 +69,7 @@ int main(){
             cout << b << endl;
             ariel::mat(colls , rows , a , b);
         }
-
+        // quit
         else if (x =='Q'){
             flag = false;
             cout <<"Bye Bye"<< endl;
